@@ -86,3 +86,10 @@ body {
     right: 15px;
     transform: rotate(-135deg);
 }
+
+.egg {
+    width: 140px;
+    height: 180px;
+    background: rgba(255, 255, 0, 0.626);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
