@@ -66,3 +66,23 @@ body {
     transform-origin: 100% 100%;
 }
 
+.infini {
+    position: relative;
+}
+
+.infini::before,
+.infini::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    border: 20px solid rgb(2, 109, 250);
+    border-radius: 50px 50px 0 50px;
+    transform: rotate(135deg);
+}
+
+.infini::after {
+    border-radius: 50px 50px 50px 0;
+    right: 15px;
+    transform: rotate(-135deg);
+}
