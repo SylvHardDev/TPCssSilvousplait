@@ -21,3 +21,48 @@ body {
     border-left: 100px solid transparent;
     border-bottom: 100px solid transparent;
 }
+
+.heart {
+    position: relative;
+}
+
+.heart::after,
+.heart::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 175px;
+    background: crimson;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart::after {
+    transform-origin: 100% 100%;
+    left: -100px;
+    transform: rotate(45deg);
+}
+
+.coeur {
+    position: relative;
+}
+
+.coeur::before,
+.coeur::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 175px;
+    border-radius: 50px 50px 0 0;
+    background: green;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.coeur::after {
+    left: -100px;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
