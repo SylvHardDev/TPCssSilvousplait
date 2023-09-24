@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.triangle {
+    height: 0;
+    width: 0;
+    border-top: 100px solid red;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+}
