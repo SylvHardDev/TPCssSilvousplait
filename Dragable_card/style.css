@@ -10,13 +10,21 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: 0 35px;
     background: linear-gradient(to left top, #031A9A, #8B53FF);
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
 }
 
 .wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow: hidden;
 }
 
 .carousel .card {
@@ -24,10 +32,23 @@ body {
     list-style: none;
     background: #fff;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.card .img {
+    background: #8B53FF;
+    width: 158px;
+    height: 158px;
+    border-radius: 50%;
 }
 
 .card .img img {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+    border-radius: 50%;
 }
