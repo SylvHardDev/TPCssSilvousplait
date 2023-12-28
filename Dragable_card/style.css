@@ -49,7 +49,7 @@ body {
 }
 
 .carousel::-webkit-scrollbar {
-    display: none;    
+  display: none;
 }
 
 .carousel :where(.card, .img) {
@@ -58,9 +58,13 @@ body {
   justify-content: center;
 }
 
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
 .carousel.dragging {
-    scroll-snap-type: none;
-    scroll-behavior: auto;
+  scroll-snap-type: none;
+  scroll-behavior: auto;
 }
 
 .wrapper .fleche:first-child {
@@ -112,8 +116,8 @@ body {
 }
 
 .carousel.dragging .card {
-    cursor: grab;
-    user-select: none;
+  cursor: grab;
+  user-select: none;
 }
 
 @media screen and (max-width: 900px) {
