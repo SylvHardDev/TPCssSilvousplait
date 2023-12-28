@@ -42,8 +42,14 @@ body {
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3) - 12px);
   gap: 16px;
-  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;    
 }
 
 .carousel :where(.card, .img) {
@@ -52,7 +58,9 @@ body {
   justify-content: center;
 }
 
-
+.carousel.dragging {
+    scroll-behavior: auto;
+}
 
 .wrapper .fleche:first-child {
   left: -22px;
@@ -62,7 +70,7 @@ body {
 }
 
 .carousel .card {
-  box-shadow: 3px 3px 6px 0 #2d2c2c;
+  /* box-shadow: 3px 3px 6px 0 #2d2c2c; */
   cursor: pointer;
   height: 342px;
   list-style: none;
