@@ -1,9 +1,16 @@
 const carousel = document.querySelector(".carousel");
-const arrowBtns = document.querySelector(".wrapper .fleche")
+const arrowBtns = document.querySelectorAll(".wrapper .fleche");
+const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 
 let isDragging = false,
   startScrollLeft,
   startX;
+
+arrowBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    carousel.scrollLeft = btn.id === "left" ? -firstCardWidth : firstCardWidth;
+  });
+});
 
 const dragStart = (e) => {
   isDragging = true;

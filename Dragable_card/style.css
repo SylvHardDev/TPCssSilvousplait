@@ -43,6 +43,7 @@ body {
   grid-auto-columns: calc((100% / 3) - 12px);
   gap: 16px;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .carousel :where(.card, .img) {
@@ -50,6 +51,8 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+
 
 .wrapper .fleche:first-child {
   left: -22px;
