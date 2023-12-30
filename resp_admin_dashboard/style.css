@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
+    appearance: 0;
+    text-decoration: none;
 }
 
 :root {
@@ -34,3 +37,4 @@
     --colotr-light: rgba(0, 0, 0, 0.4);
     --box-shadow: 0 2rem 3rem var(--color-light)
 }
+
