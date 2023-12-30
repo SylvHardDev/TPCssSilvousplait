@@ -8,14 +8,14 @@
 }
 
 :root {
-    --color-pripary: #6C9bCF;
+    --color-primary: #6C9bCF;
     --color-danger: #FF0060;
     --color-success: #1B9C85;
     --color-warning: #F7D060;
     --color-white: #ffffff;
     --color-info-dark: #7d8da1;
     --color-dark: #363949;
-    --color-light: #rgba(132, 139, 200, 0.18);
+    --color-light: rgba(132, 139, 200, 0.18);
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
 
@@ -34,7 +34,7 @@
     --color-white: #202528;
     --color-dark: #edeffd;
     --color-dark-variant: #a3bdcc;
-    --colotr-light: rgba(0, 0, 0, 0.4);
+    --color-light: rgba(0, 0, 0, 0.4);
     --box-shadow: 0 2rem 3rem var(--color-light)
 }
 
@@ -92,7 +92,7 @@ b {
 }
 
 .primary {
-    color: var(--color-pripary);
+    color: var(--color-primary);
 }
 
 .danger {
@@ -152,4 +152,45 @@ aside .sidebar {
     position: relative;
     top: 1.5rem;
     transition: all .3s ease;
+}
+
+aside .sidebar:hover {
+    box-shadow: none;
+}
+
+aside .sidebar a {
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    height: 3.7rem;
+    gap: 1rem;
+    position: relative;
+    margin-left: 2rem;
+    transition: all .3s ease;
+}
+
+aside .sidebar a span {
+    font-size: 1.6rem;
+    transition: all .3s ease;
+}
+
+aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+aside .sidebar a.active {
+    width: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-left: 0;
+}
+
+aside .sidebar a.active::before {
+    content: '';
+    width: 4px;
+    height: 25px;
+    background-color: var(--color-primary);
+    border-radius: 3px;
 }
