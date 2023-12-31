@@ -206,7 +206,7 @@ aside .sidebar a:hover {
 
 aside .sidebar a:hover span {
     margin-left: .6rem;
-}
+} 
 
 aside .sidebar .message-count {
     background-color: var(--color-danger);
