@@ -272,3 +272,13 @@ main .analyse .sales svg circle {
     stroke-dasharray: 200;
 }
 
+main .analyse .progress .percentage {
+    position: absolute;
+    top: -3px;
+    left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
