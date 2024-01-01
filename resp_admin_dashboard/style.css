@@ -253,3 +253,22 @@ main .analyse .progress {
     height: 92px;
     border-radius: 50%;
 }
+
+main .analyse svg {
+    width: 7rem;
+    height: 7rem;
+}
+
+main .analyse svg circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+main .analyse .sales svg circle {
+    stroke: var(--color-success);
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
