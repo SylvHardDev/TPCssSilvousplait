@@ -1,10 +1,25 @@
-const p1 = document.getElementById("p1")
-const p2 = document.getElementById("p2")
-const p3 = document.getElementById("p3")
-const p4 = document.getElementById("p4")
+// Sélectionner tous les en-têtes d'accordéon
+const accordionHeaders = document.querySelectorAll('.accordion-header');
 
-const m1 = document.getElementById("m1")
-const m2 = document.getElementById("m2")
-const m3 = document.getElementById("m3")
-const m4 = document.getElementById("m4")
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
 
+        // Vérifier si le contenu est actuellement caché
+        if (content.style.display === 'block') {
+            // Masquer le contenu actuel
+            content.style.display = 'none';
+            header.querySelector('.icon').src = './assets/images/icon-plus.svg';
+        } else {
+            // Masquer tous les autres contenus
+            document.querySelectorAll('.accordion-content').forEach(content => {
+                content.style.display = 'none';
+                content.previousElementSibling.querySelector('.icon').src = './assets/images/icon-plus.svg';
+            });
+
+            // Afficher le contenu actuel
+            content.style.display = 'block';
+            header.querySelector('.icon').src = './assets/images/icon-minus.svg';
+        }
+    });
+});
