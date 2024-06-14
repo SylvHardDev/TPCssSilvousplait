@@ -92,15 +92,26 @@ p.description {
     height: 25px;
 }
 
+.accordion-header img:hover {
+    transform: scale(1.2);
+    transition: .3s ease;
+}
+
+.accordion-header img:active {
+    transform: scale(.9);
+    transition: .3s ease;
+}
+
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-out;
+    transition: max-height 0.5s ease;
 }
 
 .accordion-content.open {
-    max-height: 300px; /* Ajuster en fonction de la hauteur du contenu */
-    transition: max-height 0.5s ease-in;
+    /* Ajuster en fonction de la hauteur du contenu */
+    max-height: 300px; 
+    transition: max-height 0.8s ease;
 }
 
 hr {
