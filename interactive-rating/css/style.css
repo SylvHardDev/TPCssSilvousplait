@@ -1,5 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(216, 12%, 8%);
+}
+
+.card__rating {
+  width: 350px;
+  /* height: 350px; */
+  border-radius: 20px;
+  padding: 25px;
+  background: hsl(213, 19%, 18%);
+}
+
+.star img {
+  padding: 10px;
+  border-radius: 50%;
+  background: hsl(213, 20%, 22%);
+}
+
+h1.title {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 20px 0 10px 0;
+}
+
+p.desc {
+  font-family: "Lato", sans-serif;
+  color: hsl(217, 12%, 63%);
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.level {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.level .rating__level {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: hsl(213, 20%, 22%);
+  color: hsl(217, 12%, 63%);
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.level .rating__level:hover {
+  background: hsl(25, 97%, 53%);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.level .rating__level.selected {
+  background: white;
+}
+
+button {
+  width: 100%;
+  border-radius: 20px;
+  color: hsl(216, 12%, 8%);
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  background-color: hsl(25, 97%, 53%);
+  padding: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background: white;
+  transition: 0.3s ease;
 }
