@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'snap-font';
+  src: url("/Snap-design/assets/fonts/Epilogue-VariableFont_wght.ttf");
+}
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'snap-font', sans-serif;
+  font-size: 18px;
+}
+
+:root {
+  --White:  hsl(0, 0%, 98%);
+  --Gray: hsl(0, 0%, 41%);
+  --Black: hsl(0, 0%, 8%);
+}
